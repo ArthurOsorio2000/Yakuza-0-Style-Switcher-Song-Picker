@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.songpicker">
 
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="35" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".MajimaSongSwapper"></activity>
-        <activity android:name=".KiryuSongSwapper">
+        <activity android:name=".KiryuSongSwapper"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
