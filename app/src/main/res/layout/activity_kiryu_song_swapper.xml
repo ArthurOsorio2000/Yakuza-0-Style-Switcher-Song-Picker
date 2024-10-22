@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KiryuSongSwapper"
+    android:keepScreenOn="true">
+
+    <ImageView
+        android:id="@+id/kiryuBg"
+        android:layout_width="358dp"
+        android:layout_height="431dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/kiryu_bw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/Brawler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/kiryu_brawler"
+        android:onClick="playBrawler"
+        android:text="@string/brawler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/brawler_icon" />
+
+    <ImageButton
+        android:id="@+id/Rush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/kiryu_rush"
+        android:onClick="playRush"
+        android:text="@string/rush"
+        app:layout_constraintBottom_toTopOf="@+id/Beast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Brawler"
+        app:layout_constraintVertical_bias="0.497"
+        app:srcCompat="@drawable/rush_icon" />
+
+    <ImageButton
+        android:id="@+id/Beast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/kiryu_beast"
+        android:onClick="playBeast"
+        android:text="@string/beast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/beast_icon" />
+
+    <ImageButton
+        android:id="@+id/MajimaSwap"
+        android:layout_width="111dp"
+        android:layout_height="149dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/majima_swap"
+        android:onClick="majimaSwap"
+        android:scaleType="fitXY"
+        android:text="@string/majimaSwap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/kiryu_tattoo" />
+
+    <ImageButton
+        android:id="@+id/Legend"
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/legend" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Yakuza 0 Style Switcher</string>
+    <string name="brawler">Brawler</string>
+    <string name="kiryu_brawler">Kiryu Brawler</string>
+    <string name="rush">Rush</string>
+    <string name="kiryu_rush" />
+    <string name="beast">Beast</string>
+    <string name="kiryu_beast">kiryu_beast</string>
+    <string name="majimaSwap" />
+    <string name="majima_swap" />
+    <string name="majima_thug" />
+    <string name="thug" />
+    <string name="majima_dancer" />
+    <string name="dancer" />
+    <string name="slugger" />
+    <string name="majima_slugger" />
+    <string name="kiryuSwap" />
+    <string name="majima_breaker" />
+    <string name="breaker" />
+</resources>
